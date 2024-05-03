@@ -4,69 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
-    booking
+   
+    <div class="header" >
+        <a style="text-decoration: none; height: 40px; width: 100px;border-radius: 5px;"   href="travel_home.html">Home</a>
+        <a style="text-decoration: none;height: 40px; width: 100px;border-radius: 5px;"  href="#para">About</a>
+        <a style="text-decoration: none; height: 40px; width: 100px;border-radius: 5px;" href="#footer">Contact</a>
+    </div>
 
-
-    <form action="ad.html" method="GET">  <!--get=stores value in the url only....post=for storing passwords-->
+<div class="form">
+    <form action="ad.html" id="fo"> 
         <div>
-        <label for="fname">first name:</label>
+        <label for="fname">First Name:</label>
         <input type="text" id="fname" placeholder="soma" required>
-            </div>
+            </div><br>
+
           <div>  
-        <label for="lname">last name:</label>
+        <label for="lname">Last Name:</label>
         <input type="text" id="lname" placeholder="shekar" required>
-    
-            </div>
-        <label>btech</label>
+            </div><br>
+        <label>Gender</label>
+        <input type="radio" name="title">   
+
+        <label>Male</label>
         <input type="radio" name="title">    
 
-        <label>MS</label>
-        <input type="radio" name="title">    
-
-        <label>PHD</label>
-        <input type="radio" name="title">    
-
-  
+        <label>Female</label>
+        <input type="radio" name="title">
+        
+        <label>Others</label>
+        <input type="radio" name="title"><br>
+        <br>
         <div>
-            <label for="pass">password:</label>
-            <input type="password" id="pass" maxlength="8" required>
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" maxlength="10" placeholder="0000000000" required>
         </div>
+        <br>
         <div>
-            <label for="phone">phone no:</label>
-            <input type="tel" id="phone" maxlength="10" required>
-        </div>
-        <div>
-            <label for="email">email id:</label>
+            <label for="email">Email Id:</label>
             <input type="email" id="email" placeholder="shhhsj@gmail.com" required>
         </div>
+        <br>
         <div>
-            <label for="bdate">bdate:</label>
+            <label for="bdate">Departure Date:</label>
             <input type="date" id="bdate" >
-        </div>
+        </div><br>
         <div>
-            <label for="quantity">quantity</label>
+            <label for="bdate">Arrival Date:</label>
+            <input type="date" id="bdate" >
+        </div><br>
+        <div>
+            <label for="quantity">No Of Persons:</label>
             <input type="number" id="quantity" >
-        </div>
+        </div><br>
         <div>
-            <label for="payment">payment</label>
+            <label for="payment">Travel  Mode:</label>
             <select   id="payment ">
-                <option value="visa">visa</option>
-                <option value="debit">debit</option>
+                <option value="visa">Bus</option>
+                <option value="debit">Train</option>
+                <option value="debit">Flight</option>
             </select>
-        </div>
+        </div><br>
 
         <div>
-            <label for=" subscribe">subscribe</label>
+            <label for="payment">Payment Mode:</label>
+            <select   id="payment ">
+                <option value="visa">UPI</option>
+                <option value="debit">Credit</option>
+                <option value="debit">Debit</option>
+            </select>
+        </div><br>
+
+        <div>
             <input type="checkbox" id="subscribe">
+            <label for=" subscribe">I agree to all terms and conditions</label>
+          
         </div>
-        <input type="reset">
-        <br>
-        <input type="submit"> 
+       <br>
+        <button style="margin-left: 150px; height: 40px; width: 65px;" type="submit">Submit</button> 
 
         <br>
-        SEARCH: <input type="search" placeholder="search something">
+   
     </form>
+</div>
+<footer id="footer" class="footer">
+    Contact :028892 -88289
+    <hr>
+    <div class="terms">
+    PrivacyPolicy      
+    Terms&Conditions
+    CookiesPolicy
+    ReturnPolicy
+    Disclaimer</div>
+</footer>
 </body>
 </html>
